@@ -14,19 +14,21 @@
 */
 
 body{
+    align-content: center;
     margin:auto;
-    width: 1000px;
+    width: auto;
     background-color: black;
 }
 #container{
+    align-content: center;
     margin:auto;
-    width:1000px;
+    width:95%;
     background-color: white;
 }
 header{
     display:block;
-    width:996px;
-    height: 150px;
+    width:99.%;
+    height: auto;
     background-color: #607d8b;
     border: 2px solid #607d8b;
     margin:0;
@@ -114,13 +116,16 @@ footer{
 }
 #imgMini{
     display: block;
-    width: 1000px;
+    width: 100%;
     margin: 0px;  
 }
 
 /*products.html styles */
 #gallery{
-    border: 3px dotted green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     width:100%;
 }
 figure{
@@ -129,8 +134,10 @@ figure{
     background-color: #f05545;
     border: 2px #34515e solid;
     margin: 10px;
+    flex: 0 0 30%;
 }
 figure img{
+    align-content: center;
     display: block;
     width:265px;
     padding:5px;
@@ -139,13 +146,17 @@ figure img{
 }
 figcaption{
     text-align: center;
+    margin:auto;
     margin-bottom: 10px;
     font-family: 'Rubik Mono One', sans-serif;
+}
+#gun-h2{
+    text-align: center;
 }
 
 /*about.html styles*/
 img#img-about{
-    width:500px;
+    width:45%;
     height: auto;
     margin: 10px;
     border: 5px solid #b71c1c;
@@ -161,4 +172,9 @@ p#p-about{
     float:left;
     width: 47%;
     margin-top: 10px;
+}
+
+/*contact.html*/
+#nov-img{
+    width: 100%;
 }
