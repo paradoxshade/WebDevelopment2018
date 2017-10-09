@@ -130,7 +130,7 @@ footer{
 }
 figure{
     float: left;
-    width: 300px;
+    width: 200px;
     background-color: #f05545;
     border: 2px #34515e solid;
     margin: 10px;
@@ -175,6 +175,19 @@ p#p-about{
 }
 
 /*contact.html*/
-#nov-img{
-    width: 100%;
+h2#h2-contact{
+    margin: 10px;
+    float: left;
+}
+
+form#form-contact{
+    margin-left: 15px;
+}
+
+form input{
+    margin-bottom: 10px;
+}
+
+button{
+    
 }
