@@ -12,18 +12,17 @@
     font-family: 'Bowlby One', cursive;
     font-family: 'Rubik Mono One', sans-serif;
 */
-
 body{
     align-content: center;
     margin:auto;
     width: auto;
-    background-color: black;
+    background-color: #2e2e2e;
 }
 #container{
     align-content: center;
     margin:auto;
     width:95%;
-    background-color: white;
+    background-color: black;
 }
 header{
     display:block;
@@ -51,14 +50,14 @@ nav{
     background-color: #34515e;
     margin:0;
     padding:0;
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 0px 1px 2px gray;
     
     /*gratient*/
-    background: #8eacbb;
-background: -moz-linear-gradient(top, #8eacbb 0%, #34515e 50%, #34515e 51%, #8eacbb 100%);
-background: -webkit-linear-gradient(top, #8eacbb 0%,#34515e 50%,#34515e 51%,#8eacbb 100%);
-background: linear-gradient(to bottom, #8eacbb 0%,#34515e 50%,#34515e 51%,#8eacbb 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eacbb', endColorstr='#8eacbb',GradientType=0 );
+    background: #34515e;
+background: -moz-linear-gradient(top, #34515e 0%, #8eacbb 50%, #8eacbb 51%, #34515e 100%);
+background: -webkit-linear-gradient(top, #34515e 0%,#8eacbb 50%,#8eacbb 51%,#34515e 100%);
+background: linear-gradient(to bottom, #34515e 0%,#8eacbb 50%,#8eacbb 51%,#34515e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34515e', endColorstr='#34515e',GradientType=0 );
 }
 nav ul{
     margin:0;
@@ -77,19 +76,19 @@ nav ul li a{
     padding: 14px 16px;
 }
 nav ul li a:hover{
-    background: #7f0000;
-background: -moz-linear-gradient(top, #7f0000 0%, #f05545 50%, #f05545 51%, #7f0000 100%);
-background: -webkit-linear-gradient(top, #7f0000 0%,#f05545 50%,#f05545 51%,#7f0000 100%);
-background: linear-gradient(to bottom, #7f0000 0%,#f05545 50%,#f05545 51%,#7f0000 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f0000', endColorstr='#7f0000',GradientType=0 );
-}
-nav .active{
     background: #f05545;
 background: -moz-linear-gradient(top, #f05545 0%, #7f0000 50%, #7f0000 51%, #f05545 100%);
 background: -webkit-linear-gradient(top, #f05545 0%,#7f0000 50%,#7f0000 51%,#f05545 100%);
 background: linear-gradient(to bottom, #f05545 0%,#7f0000 50%,#7f0000 51%,#f05545 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05545', endColorstr='#f05545',GradientType=0 );
     color: white;
+}
+nav .active{
+    background: #7f0000;
+background: -moz-linear-gradient(top, #7f0000 0%, #f05545 50%, #f05545 51%, #7f0000 100%);
+background: -webkit-linear-gradient(top, #7f0000 0%,#f05545 50%,#f05545 51%,#7f0000 100%);
+background: linear-gradient(to bottom, #7f0000 0%,#f05545 50%,#f05545 51%,#7f0000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f0000', endColorstr='#7f0000',GradientType=0 );
 }
 .keepOpen{
     clear:both;
@@ -101,13 +100,15 @@ footer{
     text-align: center;
     padding: 5px 0px;
 }
-
+p{
+    color: white;
+}
 
 /*index.html styles*/
 #content h2{
     float: left;
     width:100%;
-    color:black;
+    color:#8eacbb;
     padding: 0px 10px;
     font-family: 'Bowlby One', cursive;
 }
@@ -179,15 +180,25 @@ h2#h2-contact{
     margin: 10px;
     float: left;
 }
-
 form#form-contact{
+    float: left;
     margin-left: 15px;
+    color: white;
+    clear: left;
 }
-
 form input{
     margin-bottom: 10px;
+    background-color: black;
+    color: white;
 }
-
+form textarea{
+    background-color: black;
+    color: white;
+}
 button{
     
+}
+div#map{
+    float: right;
+    margin-right: auto;
 }
