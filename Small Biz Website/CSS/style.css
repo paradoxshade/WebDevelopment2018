@@ -40,7 +40,7 @@ header{
 }
 header h1{
     color: white;
-    text-shadow: 1 1px 1px #b71c1c;
+    text-shadow: 1px 1px 2px #b71c1c;
     text-align: center;
     margin-top: 50px;
 }
@@ -117,8 +117,8 @@ p{
 }
 #imgMini{
     display: block;
-    width: 100%;
-    margin: 0px;  
+    width: 98%;
+    margin: auto;
 }
 
 /*products.html styles */
@@ -196,7 +196,23 @@ form textarea{
     color: white;
 }
 button{
-    
+    font-family: serif, cursive;
+    color: white;
+    background: #8eacbb;
+background: -moz-radial-gradient(center, ellipse cover, #8eacbb 0%, #34515e 99%);
+background: -webkit-radial-gradient(center, ellipse cover, #8eacbb 0%,#34515e 99%);
+background: radial-gradient(ellipse at center, #8eacbb 0%,#34515e 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eacbb', endColorstr='#34515e',GradientType=1 );
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:active{
+    background: #f05545;
+background: -moz-radial-gradient(center, ellipse cover, #f05545 0%, #7f0000 99%);
+background: -webkit-radial-gradient(center, ellipse cover, #f05545 0%,#7f0000 99%);
+background: radial-gradient(ellipse at center, #f05545 0%,#7f0000 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05545', endColorstr='#7f0000',GradientType=1 );
 }
 div#map{
     float: right;
