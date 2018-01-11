@@ -8,17 +8,32 @@
 
 <body>
     <script>
-        //alert("Death to the ogre!");
-        //confirm("Do you want to jump off this cliff?");
-        //prompt("What is your favorite color?");
         
-        var cheese = confirm("do you like eating cheese?");
+        document.write("<h1>CYOA</h1>");
+        var playerName = prompt("What is you name?");
         
-        if(cheese == true){
-            alert("I love cheese!!!");
+        alert("nice to meet you " + playerName + "!");
+        
+        var beginAdv = prompt("Do you wish to go on an adventure? (yes/no/maybe)").toLowerCase();
+        
+        if (beginAdv == "maybe"){
+            alert("Well, then a group of golbins might have just run out of the forest and just maybe shot you with a bow after possibly cutting off your fingers in a probably painful way.")
+            alert("You have died. Boo-hoo, next time be more decisive.");
+            alert("refresh the page to try again");
         }
-        else
-            alert("death to you!!!");
+        else if (beginAdv == "no"){
+            prompt("What are you wasting my time for then?")
+            alert("Well, I don't care, so you die alone of complete and utter boredom.");
+            alert("refresh the page to try again");
+        }
+        else if (beginAdv == "yes"){
+            
+        }
+        else{
+            alert("I'm sorry, I don't know gibberish. Sadly being able to is a crime punishable by death.");
+            alert("You have been beheaded");
+            alert("refresh the page to try again");
+        }
         
     </script>
 </body>
