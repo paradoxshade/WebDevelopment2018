@@ -7,33 +7,191 @@
 </head>
 
 <body>
+    
     <script>
-        
         document.write("<h1>CYOA</h1>");
+        document.write("<p>Leave a 5 start rating if you enjoyed!<p>");
         var playerName = prompt("What is you name?");
+        var win = false;
+        
+        if (playerName == null){
+            alert("Looks like I get to choose your name then.");
+            playerName = "Ergish McArgyle";
+        }
         
         alert("nice to meet you " + playerName + "!");
         
-        var beginAdv = prompt("Do you wish to go on an adventure? (yes/no/maybe)").toLowerCase();
+        game();
         
-        if (beginAdv == "maybe"){
-            alert("Well, then a group of golbins might have just run out of the forest and just maybe shot you with a bow after possibly cutting off your fingers in a probably painful way.")
-            alert("You have died. Boo-hoo, next time be more decisive.");
-            alert("refresh the page to try again");
-        }
-        else if (beginAdv == "no"){
-            prompt("What are you wasting my time for then?")
-            alert("Well, I don't care, so you die alone of complete and utter boredom.");
-            alert("refresh the page to try again");
-        }
-        else if (beginAdv == "yes"){
+        function game(){
+            
+            win = false;
+        
+            var beginAdv = prompt("Do you wish to go on an adventure? (yes/no/maybe)").toLowerCase();
+
+            if (beginAdv == "maybe")
+            {
+                alert("Well, then a group of golbins might have just run out of the forest and just maybe shot you with a bow after possibly cutting off your fingers in a probably painful way.");
+                alert("You have died. Boo-hoo, next time be more decisive.");
+            }
+            else if (beginAdv == "no")
+            {
+                prompt("What are you wasting my time for then?");
+                alert("Well, I don't care, so you die alone of complete and utter boredom.");
+            }
+            else if (beginAdv == "yes")
+            {
+                alert("Good to see that not all people named " + playerName + " are lazy bums.");
+                alert("The knife begins it's downward arc, the edge splitting flesh. The blade get caught on a rib, so you pull it out and slash again. This time, it goes through.");
+                Taste();
+            }
+            else if(beginAdv == ""){
+                alert("You didn't put anything? Try again");
+                game();
+            }
+            else
+            {
+                alert("I'm sorry, I don't know gibberish. Sadly being able to is a crime punishable by death.");
+                alert("You have been beheaded");
+                }
+            
+            var cont = confirm("Do you want to try again?");
+            if (cont && !win){
+                alert("have fun in the after life!");
+                alert("Your still here? Dang. Let me fix this for you.");
+                alert("Whoops... I acedently got you stuck in a time loop.");
+                alert("Well have fun living these moments over and over and over and over");
+                game();
+            }
+            else if(cont && win)
+                game();
             
         }
-        else{
-            alert("I'm sorry, I don't know gibberish. Sadly being able to is a crime punishable by death.");
-            alert("You have been beheaded");
-            alert("refresh the page to try again");
+        
+        function Taste(){
+            var foodTaste = prompt("You raise the fork to your mouth and take a bite of the barbecue ribs you just ordered. How does it taste? (good/bad/ok)").toLowerCase();
+                if (foodTaste == "good")
+                {
+                    alert("You decide to give the resturant 4 stars. After you finish your meal you leave to your ordinary boring life as a critic.");
+                    alert("But on your way home your car crashes. You then go to a monastary in search of healing. You become a sorcerer who wears a cape and can ocasionally mess with time by using an eye amulet.");
+                    alert("Oh wait, thats the wrong story. He's a doctor, your are a food critic.");
+                    alert("You die of food poisoning from a food you try the next day.");
+
+                }
+                else if (foodTaste == "ok")
+                {
+                    alert("Too much salt, eh? That's to be expected from an inn in a small town.");
+                    prompt("Sudenly the door is thrown open and in strides a...");
+                    alert("JK, I'm the narrirator. In strides the Great Wizard Hfdhlahl (No, I can't procounce that either). 'I am the Great Wizard Jfdsia! Bow before me!'");
+                    Attack();
+                }
+                else if (foodTaste == "bad")
+                {
+                    alert("You throw up all over the girl you have had a crush on since the 2nd grade and finaly had the guts to ask her out. She then smacks you and steals your car.");
+                    alert("You die of depression.");
+                }
+                else if(foodTaste == ""){
+                alert("You didn't put anything? Try again");
+                Taste();
+            }
+                else
+                {
+                    alert("Well, if it is as bad as your ability to spell and/or follow directions then...");
+                    alert("You have died in outhouse, with diareah so bad you literly expelled your intestines.");
+                }
         }
+        
+        function Attack(){
+            var weapon = prompt("You pick up your... (sword/bow/staff/fork)").toLowerCase();
+                    if (weapon == "sword")
+                    {
+                        alert("You pick up your sword and stab the Great Wizard Tkdsaioe.");
+                        alert("Congratulations! You win!");
+                        alert("JK (again). As the life drains out of the Great Wizard Ydsjoeilds he casts one final spell.");
+                        alert("The Great Wizard Ufjklfwifd suddenly explodes, destroying your sword and your arm.");
+                        Stuff();
+                    }
+                    else if (weapon == "bow")
+                    {
+                        alert("You quickly pull out your notepad and pencil. The Great Wizard Whfdshl starts scribbling on the nearest table. You begin to draw a bow.");
+                        Shoot();
+                    }
+                    else if (weapon == "staff")
+                    {
+                        alert("You grab the stick you picked up on the trail today and point the end of it at the Great Wizard Sfdlsfds. The Great Wizard Afhdlsh laughs at your pitful attempt to stop him before he transfers your soul into the staff.");
+                        alert("After the Great Wizard Qfdshilas has left, the innkeeper thinking you are a simple stick throws you into the fire.");
+
+                    }
+                    else if (weapon == "fork")
+                    {
+                        alert("You point your fork in the Great Wizard Lhfdsl's direction. 'Wait. Didn't it just say your name was Hfdhlahl? Then it said your name was Jfdsia, and now it's saying you name is Lhfdsl. What is it?'");
+                        alert("'It is the Great Wizard Gkflesaij!'");
+                        alert("'What? Where did that one come from?'");
+                        alert("'The Great Wizard Ffjkdlsa is displeased with your questions. >:(' The Great Wizard Ddfjskl then blasts you with a fireball");
+                    }
+                    else if(weapon == ""){
+                    alert("You didn't put anything? Try again");
+                    Attack();
+                    }
+                    else
+                    {
+                        alert("I am the one who doesn't have to care if I can spell. You have to or else this game won't work!!!");
+                        alert("The Great Wizard Kjdfjjs senses you stupidity and rids the world of it.");
+                    }
+        }
+        
+        function Shoot(){
+            var bow = prompt("What type of bow do you draw? (pretty/shooty)").toLowerCase();
+                        if (bow == "shooty")
+                        {
+                            alert("You finish drawing your bow and look up. The Great Wizard Ehfkld just finished drawing an evil incantation that curses you.");
+                            alert("You turn into a frog and get thrown into stew.");
+                        }
+                        else if(bow == "pretty")
+                        {
+                            alert("You finish drawing your bow and hold it up for the Great Wizard Rkfdls to see. The Great Wizard Thfjkdsh looks up and smiles. 'Thank you! That's nice!'");
+                            alert("You win! mostly because I am too lazy to finish this section of the story.");
+                            win = true;
+                        }
+            else if(bow == ""){
+                alert("You didn't put anything? Try again");
+                Shoot();
+            }
+                        else
+                        {
+                            alert("You died");
+                        }
+        }
+        
+        function Stuff(){
+            var action = prompt("As you stand there, stunned from the explosion, you hear screaming outside. Do you sit down and cry or do you go help? (sit/help)").toLowerCase();
+                        if(action == "sit")
+                        {
+                            alert("Well then you get what you deserve. You bleed out and die you selfish-");
+                            alert("Hey! what was that for! it's rude to interupt! >:(");
+                            while (true)
+                            {
+                                alert("Now you get what you deserve. Muhahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahahaha!");
+                            }
+                        }
+                        else if(action == "help")
+                        {
+                            alert("You stumble to the door and look outside. The town is being raided by goblins.");
+                            alert("You rush to help but quickly pass out from pain and blood loss.");
+                        }
+            else if(action == ""){
+                alert("You didn't put anything? Try again");
+                Stuff();
+            }
+                        else
+                        {
+                            alert("Just because you are missing a hand doesn't give you an excuse to put " + action + " instead of an actuall choice");
+                            alert("Let's try again");
+                            prompt("As you stand there, stunned from the explosion, you hear screaming outside. Do you sit down and cry or do you go help? (sit/help)").toLowerCase();
+                            alert("Doesn't matter, You now only have one hand! Go mope for the rest of your life and die alone and sad.");
+                        }
+        }
+            
         
     </script>
 </body>
