@@ -9,23 +9,32 @@
 <body>
     
     <script>
-        document.write("<h1>CYOA</h1>");
-        document.write("<p>Leave a 5 start rating if you enjoyed!<p>");
-        var playerName = prompt("What is you name?");
-        var win = false;
         
-        if (playerName == null){
-            alert("Looks like I get to choose your name then.");
-            playerName = "Ergish McArgyle";
+        var player = {
+            name:"Ergish McArgyle",
+            deaths:0,
+            wins:0,
         }
         
-        alert("nice to meet you " + playerName + "!");
+        document.write("<h1>CYOA</h1>");
+        document.write("<p>Leave a 5 start rating if you enjoyed!<p>");
+        player.name = prompt("What is you name?");
+        var win = false;
+        
+        if (player.name == null){
+            alert("Looks like I get to choose your name then.");
+            player.name = "Ergish McArgyle";
+        }
+        
+        alert("nice to meet you " + player.name + "!");
         
         game();
         
         function game(){
             
             win = false;
+            
+            alert("*" + player.name + " has died " + player.deaths + " times and won " + player.wins + " times*");
         
             var beginAdv = prompt("Do you wish to go on an adventure? (yes/no/maybe)").toLowerCase();
 
@@ -41,7 +50,7 @@
             }
             else if (beginAdv == "yes")
             {
-                alert("Good to see that not all people named " + playerName + " are lazy bums.");
+                alert("Good to see that not all people named " + player.name + " are lazy bums.");
                 alert("The knife begins it's downward arc, the edge splitting flesh. The blade get caught on a rib, so you pull it out and slash again. This time, it goes through.");
                 Taste();
             }
@@ -55,16 +64,91 @@
                 alert("You have been beheaded");
                 }
             
-            var cont = confirm("Do you want to try again?");
+            var cont = confirm("*Do you want to try again?*");
             if (cont && !win){
-                alert("have fun in the after life!");
-                alert("Your still here? Dang. Let me fix this for you.");
-                alert("Whoops... I acedently got you stuck in a time loop.");
-                alert("Well have fun living these moments over and over and over and over");
-                game();
+                switch(player.deaths){
+                    case 0:
+                        alert("have fun in the after life!");
+                        alert("Your still here? Dang. Let me fix this for you.");
+                        alert("Whoops... I acedently got you stuck in a time loop.");
+                        alert("Well have fun living these moments over and over and over and over");
+                        break;
+                    case 1:
+                        var death = prompt("Oh, back so soon? How is dying?").toLowerCase;
+                        if (death == "great")
+                            alert("I'm glad you enjoy it");
+                        else
+                        alert("Well thats good. This is very entertaining.");
+                        alert("I got to finish making my hot chocolate now. See you in a few!");
+                        break;
+                    case 2:
+                        alert("Still insisting on dying over and over? Well, not my problem.");
+                        break;
+                    case 3:
+                        alert("You almost did it this time!");
+                        alert("At least I think you almost did. I was busy watching tv.");
+                        alert("Now shoo! it's getting to the good part.");
+                        break;
+                    case 4:
+                        alert("Now I am getting bored, so I am just going tell some Chuck Norris jokes");
+                        break;
+                    case 5:
+                        alert("Chuck Norris can beat Halo on Legendary with a broken Guitar Hero controller");
+                        break;
+                    case 6:
+                        alert("Chuck Norris recently had the idea to sell his urine as a canned berage. We know this beverage as Red Bull.");
+                        break;
+                    case 7:
+                        alert("Chuck Norris has already been to Mars; that's why there are no signs of life.");
+                        break;
+                    case 8:
+                        alert("Chuck Norris died 20 years ago, Death just hasn't built up the courage to tell him yet.");
+                        break;
+                    case 9:
+                        alert("Chuck Norris just tried that, be he succeded.");
+                        alert("*Chuck Norris has died 0 times and has won too many times*");
+                        break;
+                    case 10:
+                        alert("There used to be a street named after Chuck Norris, but it was changed because nobody crosses Chuck Norris and lives.");
+                        break;
+                    case 11:
+                        alert("Chuck Norris threw a grenade and killed 50 people, then it exploded.");
+                        break;
+                    case 12:
+                        alert("Before going to bed, the Boogeyman always checks his closet for Chuck Norris");
+                        break;
+                    case 13:
+                        alert("While learning CPR Chuck Norris actually brought the practice dummy to life.");
+                        break;
+                    case 14:
+                        alert("Chuck Norris went skydiving and his parachute failed to open, so he took it back the next day for a refund.");
+                        break;
+                    case 15:
+                        alert("Chuck Norris doesn't dial the wrong number, you pick up the wrong phone.");
+                        break;
+                    case 16:
+                        alert("Chuck Norris and Superman once fought each other on a bet. The loser had to start wearing his underwear on the outside of his pants.");
+                        break;
+                    case 100:
+                        alert ("Oh, your still here? A for effort!");
+                        break;
+                    default:
+                        alert("*The Chuck Norris joke generator has broken*");
+                        alert("You see the narrorator taking a nap in the corner");
+                        break;
+                        
+                }
+                    
+                player.deaths++;
+                game(); 
+                               
             }
             else if(cont && win)
-                game();
+            {
+                player.wins++; 
+                game();                
+            }
+                
             
         }
         
