@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+    <style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <h1>My first js animation</h1>
+    
+    <button onclick="myMove()">Click to move square</button>
+    
+    <div id="container">
+        <div id="animation"></div>
+    </div>
+    
+    <script>
+    
+        function myMove(){
+            var elem = document.getElementById("animation");
+            var elem2 = document.getElementById("container");
+            var Xpos = 0;
+            var Ypos = 0;
+            var dX = 2;
+            var dY = 1;
+            var id = setInterval(frame, 5);
+            function frame() {
+                    Xpos += dX;
+                    Ypos += dY;
+                    elem.style.top = Xpos + 'px';
+                    elem.style.left = Ypos + 'px';
+                elem2.style.top = Xpos + 'px';
+                    elem2.style.left = Ypos + 'px';
+                if (Xpos >= 350) {
+                    dX = -3;
+                } 
+                else if (Ypos >= 350){
+                    dY = -2;
+                }
+                else if (Xpos <= 0){
+                    dX = 2;
+                }
+                else if (Ypos <= 0){
+                    dY = 1;
+                }
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
