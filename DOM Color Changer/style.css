@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: firebrick;
+    font-family: 'Roboto', cursive;
+    position: relative;
+    z-index: 50;
+    padding-bottom: 50px;
+}
+
+.main {
+    border-radius: 30x;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    height: 300;
+    text-align: right;
+    background-color: aliceblue;
+    margin:auto;
+    box-shadow: 2 3px 5px #2c2a2a;
+}
+
+.main h1 {
+    color: #fff;
+}
+
+.main input[type="radio"] {
+    display: none;
+}
+
+.main input[type="radio"] + .box {
+    transition: all .4s ease-out;
+}
+
+.main input[type="radio"]:hover + .box; {
+    transition: all .4s ease-out;
+    border-radius: 40px;
+}
+
+.main input[type="radio"]:checked + .box {
+    transition: ease all 0.4s;
+    border-radius: 100%;
+}
+
+.main .box {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    will-change: transition;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
