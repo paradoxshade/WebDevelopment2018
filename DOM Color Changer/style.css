@@ -52,3 +52,153 @@ body {
     cursor: pointer;
     position: relative;
 }
+
+.main .hue {
+    height: 20px;
+    width: 20px;
+    display:inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 8.7px;
+    line-height: 30px;
+    padding: 0;
+    color:white;
+}
+
+.main .colors {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+.main .fill {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    padding: 0;
+    color: white;
+    margin: 0;
+}
+
+.filler {
+    flex: 1 1 auto;
+}
+
+#preview {
+    height: 175px;
+    width: 175px;
+    margin-top: 20px;
+    background-color: bisque;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.previews {
+    grid-column: 2/ 3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    overflow: auto;
+    z-index: 1;
+    transition: all .4s ease-out;
+}
+
+.mdls {
+    padding-top: 50px;
+    width: 50%;
+    margin: auto;
+    z-index: 999;
+    position: relative;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / 4;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/4;
+}
+
+.btn {
+    margin-right: 5px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    background-color: transparent;
+    color: blue;
+    width: 96px;
+    height: 48px;
+    outline: none;
+    color: black;
+    transition: all .4s ease-out;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    transition: all .4s ease-out;
+}
+
+.btn:active {
+    outline: none;
+}
+
+.btn2 {
+    margin-right: 10px;
+    border: 1px solid #2979ff;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
+    width: 96px;
+    height: 48px;
+    outline: none;
+    color: chocolate;
+    transition: all .4s ease-out;
+    float: right;
+}
+
+.btn2:hover {
+    background-color: darkslategray;
+    color: white;
+    transition: all .4s ease-out;
+}
+
+.btn2:active {
+    outline: none;
+}
+
+.red500{background-color: red;}
+.orange500{background-color: orange;}
+.yellow500{background-color: yellow;}
+.green500{background-color: green;}
+.blue500{background-color: blue;}
+.indigo500{background-color: indigo;}
+.purple500{background-color: purple;}
+.white{background-color: white;}
+.grey500{background-color: gray;}
