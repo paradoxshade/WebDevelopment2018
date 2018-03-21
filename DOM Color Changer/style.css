@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-    background-color: firebrick;
-    font-family: 'Roboto', cursive;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     z-index: 50;
     padding-bottom: 50px;
 }
 
 .main {
-    border-radius: 30x;
+    border-radius: 3px;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 50%;
-    height: 300;
-    text-align: right;
-    background-color: aliceblue;
-    margin:auto;
-    box-shadow: 2 3px 5px #2c2a2a;
+    height: 300px;
+    text-align: left;
+    background-color: #1a1a1a;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
 }
 
 .main h1 {
@@ -33,9 +33,9 @@ body {
     transition: all .4s ease-out;
 }
 
-.main input[type="radio"]:hover + .box; {
+.main input[type="radio"]:hover + .box {
     transition: all .4s ease-out;
-    border-radius: 40px;
+    border-radius: 13px;
 }
 
 .main input[type="radio"]:checked + .box {
@@ -56,16 +56,16 @@ body {
 .main .hue {
     height: 20px;
     width: 20px;
-    display:inline-block;
+    display: inline-block;
     position: relative;
     text-align: center;
     font-size: 8.7px;
     line-height: 30px;
     padding: 0;
-    color:white;
+    color: white;
 }
 
-.main .colors {
+.main .color {
     height: 50px;
     width: 50px;
     display: inline-block;
@@ -97,24 +97,28 @@ body {
     height: 175px;
     width: 175px;
     margin-top: 20px;
-    background-color: bisque;
+    background-color: #1a1a1a;
     margin-bottom: 20px;
     border-radius: 20px;
     border: 2px solid black;
 }
 
 .previews {
-    grid-column: 2/ 3;
+    grid-column: 2 / 3;
 }
 
 .modal {
-    display: none;
+    display: grid;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility linear 0.5s, opacity 0.5s linear;
+    transition-delay: 0.1s;
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: aqua;
+    background-color: rgba(0,0,0,0.4);
     overflow: auto;
     z-index: 1;
     transition: all .4s ease-out;
@@ -136,14 +140,14 @@ body {
 
 .center {
     display: flex;
-    flex-direction: column;
-    grid-column: 3 / 4;
+    flex-direcion: column;
+    grid-column: 2 / 3;
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    grid-column: 3/4;
+    grid-column: 3 / 4;
 }
 
 .btn {
@@ -151,16 +155,16 @@ body {
     border: 1px solid #000000;
     border-radius: 50px;
     background-color: transparent;
-    color: blue;
+    color: rgba(0,0,0, 0.87);
     width: 96px;
     height: 48px;
     outline: none;
-    color: black;
+    color: #000000;
     transition: all .4s ease-out;
 }
 
 .btn:hover {
-    background-color: black;
+    background-color: #000000;
     color: white;
     transition: all .4s ease-out;
 }
@@ -171,20 +175,20 @@ body {
 
 .btn2 {
     margin-right: 10px;
-    border: 1px solid #2979ff;
+    border: 1px solid #2979FF;
     border-radius: 50px;
     background-color: transparent;
-    color: black;
+    color: rgba(0,0,0, 0.87);
     width: 96px;
     height: 48px;
     outline: none;
-    color: chocolate;
+    color: #2979FF;
     transition: all .4s ease-out;
     float: right;
 }
 
 .btn2:hover {
-    background-color: darkslategray;
+    background-color: #2979FF;
     color: white;
     transition: all .4s ease-out;
 }
@@ -193,12 +197,20 @@ body {
     outline: none;
 }
 
-.red500{background-color: red;}
-.orange500{background-color: orange;}
-.yellow500{background-color: yellow;}
-.green500{background-color: green;}
-.blue500{background-color: blue;}
-.indigo500{background-color: indigo;}
-.purple500{background-color: purple;}
-.white{background-color: white;}
-.grey500{background-color: gray;}
+.red500 {background-color: #F44336;}
+
+.orange500 {background-color: #FF9800;}
+
+.yellow500 {background-color: #FFEB3B;}
+
+.green500 {background-color: #4CAF50;}
+
+.blue500 {background-color: #2196F3;}
+
+.indigo500 {background-color: #3F51B5;}
+
+.purple500 {background-color: #9C27B0;}
+
+.white {background-color: #FFFFFF;}
+
+.grey500 {background-color: #9E9E9E;}

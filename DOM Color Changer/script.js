@@ -13,20 +13,23 @@ function changeColor() {
     document.body.style.background = color;
 }
 
-changeBtn.onclick = function() {
-    modal.style.display = "grid";
-}
-
 function Close() {
-    modal.style.display = "none";
+    modal.style.visibility = "hidden";
+    modal.style.opacity = "0";
     preview.style.background = "#1a1a1a";
     document.querySelector('input[name="colors"]:checked').checked = false;
 }
 
+function ChangeButtonClick() {
+    modal.style.visibility = "visible";
+    modal.style.opacity = "1";
+}
+
 window.onclick = function(event){
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.visibility = "hidden";
+        modal.style.opacity = "0"
         preview.style.background = "#1a1a1a";
         document.querySelector('input[name="colors"]:checked').checked = false;
     }
-}
+};
