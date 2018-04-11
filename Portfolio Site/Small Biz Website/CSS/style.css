@@ -1,0 +1,220 @@
+/*global style */
+/*
+    Primary:#607d8b;
+    P-Light:#8eacbb;
+    P-Dark:#34515e;
+    Secondary:#b71c1c;
+    S-Light:#f05545;
+    S-Dark:#7f0000;
+
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Bowlby One', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+*/
+body{
+    align-content: center;
+    margin:auto;
+    width: auto;
+    background-color: #2e2e2e;
+}
+#container{
+    align-content: center;
+    margin:auto;
+    width:95%;
+    max-width: 2000px;
+    background-color: black;
+}
+header{
+    display:block;
+    width:99.%;
+    height: auto;
+    background-color: #607d8b;
+    border: 2px solid #607d8b;
+    margin:0;
+    padding:0;
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+    background-image: url(../Images/Baner.jpg);
+    background-size: cover;
+    background-position: top;
+}
+header h1{
+    color: white;
+    text-shadow: 1px 1px 2px #b71c1c;
+    text-align: center;
+    margin-top: 50px;
+}
+nav{
+    float:left;
+    width:100%;
+    background-color: #34515e;
+    margin:0;
+    padding:0;
+    box-shadow: 0px 1px 2px gray;
+    
+    /*gratient*/
+    background: #34515e;
+background: -moz-linear-gradient(top, #34515e 0%, #8eacbb 50%, #8eacbb 51%, #34515e 100%);
+background: -webkit-linear-gradient(top, #34515e 0%,#8eacbb 50%,#8eacbb 51%,#34515e 100%);
+background: linear-gradient(to bottom, #34515e 0%,#8eacbb 50%,#8eacbb 51%,#34515e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34515e', endColorstr='#34515e',GradientType=0 );
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    color: white;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display:block;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+}
+nav ul li a:hover{
+    background: #f05545;
+background: -moz-linear-gradient(top, #f05545 0%, #7f0000 50%, #7f0000 51%, #f05545 100%);
+background: -webkit-linear-gradient(top, #f05545 0%,#7f0000 50%,#7f0000 51%,#f05545 100%);
+background: linear-gradient(to bottom, #f05545 0%,#7f0000 50%,#7f0000 51%,#f05545 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05545', endColorstr='#f05545',GradientType=0 );
+    color: white;
+}
+nav .active{
+    background: #7f0000;
+background: -moz-linear-gradient(top, #7f0000 0%, #f05545 50%, #f05545 51%, #7f0000 100%);
+background: -webkit-linear-gradient(top, #7f0000 0%,#f05545 50%,#f05545 51%,#7f0000 100%);
+background: linear-gradient(to bottom, #7f0000 0%,#f05545 50%,#f05545 51%,#7f0000 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f0000', endColorstr='#7f0000',GradientType=0 );
+}
+.keepOpen{
+    clear:both;
+}
+footer{
+    width:100%;
+    background-color: #34515e;
+    color: white;
+    text-align: center;
+    padding: 5px 0px;
+}
+p{
+    color: white;
+}
+
+/*index.html styles*/
+#content h2{
+    float: left;
+    width:100%;
+    color:#8eacbb;
+    padding: 0px 10px;
+    font-family: 'Bowlby One', cursive;
+}
+#mainp{
+    padding: 0px 10px;
+}
+#imgMini{
+    display: block;
+    width: 98%;
+    margin: auto;
+}
+
+/*products.html styles */
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items:center;
+    width:100%;
+}
+figure{
+    width: 300px;
+    background-color: #f05545;
+    border: 2px #34515e solid;
+    margin: 10px;
+}
+figure img{
+    align-content: center;
+    display: block;
+    width:265px;
+    padding:5px;
+    margin: 10px auto;
+    
+}
+figcaption{
+    text-align: center;
+    margin:auto;
+    margin-bottom: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+#gun-h2{
+    text-align: center;
+}
+
+/*about.html styles*/
+img#img-about{
+    width:45%;
+    height: auto;
+    margin: 10px;
+    border: 5px solid #b71c1c;
+    float:left;
+}
+h2#h2-about{
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 40%;
+}
+p#p-about{
+    float:left;
+    width: 47%;
+    margin-top: 10px;
+}
+
+/*contact.html*/
+h2#h2-contact{
+    margin: 10px;
+    float: left;
+}
+form#form-contact{
+    float: left;
+    margin-left: 15px;
+    color: white;
+    clear: left;
+}
+form input{
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+form textarea{
+    background-color: black;
+    color: white;
+}
+button{
+    font-family: serif, cursive;
+    color: white;
+    background: #8eacbb;
+background: -moz-radial-gradient(center, ellipse cover, #8eacbb 0%, #34515e 99%);
+background: -webkit-radial-gradient(center, ellipse cover, #8eacbb 0%,#34515e 99%);
+background: radial-gradient(ellipse at center, #8eacbb 0%,#34515e 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eacbb', endColorstr='#34515e',GradientType=1 );
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:active{
+    background: #f05545;
+background: -moz-radial-gradient(center, ellipse cover, #f05545 0%, #7f0000 99%);
+background: -webkit-radial-gradient(center, ellipse cover, #f05545 0%,#7f0000 99%);
+background: radial-gradient(ellipse at center, #f05545 0%,#7f0000 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05545', endColorstr='#7f0000',GradientType=1 );
+}
+div#map{
+    float: right;
+    margin-right: auto;
+}
