@@ -1,0 +1,209 @@
+/*global style */
+/*
+    Primary:#607d8b;
+    P-Light:#8eacbb;
+    P-Dark:#34515e;
+    Secondary:#b71c1c;
+    S-Light:#f05545;
+    S-Dark:#7f0000;
+
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Bowlby One', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+*/
+body{
+    align-content: center;
+    margin:auto;
+    width: auto;
+    background-color: #1f0802;
+}
+#container{
+    display: grid;
+    grid-template-columns: 20% auto 0;
+    grid-column-gap: 10%;
+    align-content: center;
+    margin:auto;
+    width:100%;
+}
+header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width:100%;
+    height: 100%;
+    background-color: #607d8b;
+    margin:0;
+    padding:0;
+    font-family: 'Black Ops One', cursive;
+    font-size: 40px;
+    background-image: url(../Images/theOneRing.png);
+    background-size: cover;
+    background-position: center;
+}
+header h1{
+    color: white;
+    text-align: center;
+    margin:5%;
+    margin-bottom: 0;
+}
+header h2{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+}
+nav{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width:100%;
+    background-color: #8d1102;
+    margin:0;
+    padding:0;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    color: white;
+}
+nav ul li{
+    float: left;
+    width: 100%;
+}
+nav ul li a{
+    display:inline-block;
+    width: 100%;
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+}
+nav ul li a:hover{
+    background: #cc2302;
+    color: white;
+    width:95%;
+}
+nav .active{
+    background: #cc2302;
+}
+.keepOpen{
+    clear:both;
+}
+footer{
+    width:100%;
+    color: white;
+    text-align:center;
+    padding: 5px 0px;
+    margin-top: 100%;
+}
+p{
+    color: white;
+}
+
+#content{
+    background-color: #a38a4c;
+}
+
+/*index.html styles*/
+#content h2{
+    width: auto;
+    color:#8eacbb;
+    padding: 10px 10%;
+    margin-top: 0;
+    font-family: 'Bowlby One', cursive;
+    background-color: #cc2302;
+}
+#mainp{
+    padding: 0px 10px;
+}
+
+/*products.html styles */
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items:center;
+    width:100%;
+}
+figure{
+    width: 300px;
+    background-color: #f05545;
+    margin: 10px;
+}
+figure img{
+    align-content: center;
+    display: block;
+    width:265px;
+    padding:5px;
+    margin: 10px auto;
+    
+}
+figcaption{
+    text-align: center;
+    margin:auto;
+    margin-bottom: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+#gun-h2{
+    text-align: center;
+    
+}
+
+/*about.html styles*/
+h2#h2-about{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: auto;
+}
+p#p-about{
+    float:left;
+    width: 47%;
+    margin-top: 10px;
+}
+
+/*contact.html*/
+h2#h2-contact{
+    margin: 10px;
+    float: left;
+}
+form#form-contact{
+    float: left;
+    margin-left: 15px;
+    color: white;
+    clear: left;
+}
+form input{
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+form textarea{
+    background-color: black;
+    color: white;
+}
+button{
+    font-family: serif, cursive;
+    color: white;
+    background: #8eacbb;
+background: -moz-radial-gradient(center, ellipse cover, #8eacbb 0%, #34515e 99%);
+background: -webkit-radial-gradient(center, ellipse cover, #8eacbb 0%,#34515e 99%);
+background: radial-gradient(ellipse at center, #8eacbb 0%,#34515e 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eacbb', endColorstr='#34515e',GradientType=1 );
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:active{
+    background: #f05545;
+background: -moz-radial-gradient(center, ellipse cover, #f05545 0%, #7f0000 99%);
+background: -webkit-radial-gradient(center, ellipse cover, #f05545 0%,#7f0000 99%);
+background: radial-gradient(ellipse at center, #f05545 0%,#7f0000 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05545', endColorstr='#7f0000',GradientType=1 );
+}
+div#map{
+    float: right;
+    margin-right: auto;
+}
