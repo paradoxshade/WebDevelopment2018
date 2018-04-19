@@ -21,6 +21,7 @@ body{
 #container{
     display: grid;
     grid-template-columns: 20% auto 0;
+    grid-template-rows: 20% 1fr;
     grid-column-gap: 10%;
     align-content: center;
     margin:auto;
@@ -33,20 +34,16 @@ header{
     grid-column-end: 4;
     width:100%;
     height: 100%;
-    background-color: #607d8b;
-    margin:0;
-    padding:0;
     font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
     background-image: url(../Images/theOneRing.png);
     background-size: cover;
     background-position: center;
+    font-size: 50px;
 }
 header h1{
     color: lightgray;
     text-shadow: -1px -1px 0 black;
     text-align: center;
-    margin:5%;
     margin-bottom: 0;
 }
 header h2{
@@ -109,7 +106,6 @@ background: linear-gradient(to bottom, rgba(163,138,76,1) 90%,rgba(163,138,76,0.
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a38a4c', endColorstr='#00000000',GradientType=0 );
 }
 
-/*index.html styles*/
 #content h2{
     width: auto;
     color:white;
@@ -117,9 +113,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a38a4c', end
     margin-top: 0;
     font-family: 'Gugi', cursive;
     background-color: #cc2302;
-}
-#mainp{
-    padding: 0px 10px;
 }
 
 /*products.html styles */
@@ -150,28 +143,8 @@ figcaption{
     margin-bottom: 10px;
     font-family: 'Rubik Mono One', sans-serif;
 }
-#gun-h2{
-    text-align: center;
-    
-}
-
-/*about.html styles*/
-h2#h2-about{
-    margin-top: 10px;
-    margin-bottom: 0px;
-    width: auto;
-}
-p#p-about{
-    float:left;
-    width: 47%;
-    margin-top: 10px;
-}
 
 /*contact.html*/
-h2#h2-contact{
-    margin: 10px;
-    float: left;
-}
 form#form-contact{
     float: left;
     margin-left: 15px;
@@ -180,33 +153,25 @@ form#form-contact{
 }
 form input{
     margin-bottom: 10px;
-    background-color: black;
+    background-color: #755d32;
     color: white;
+    border: 0px;
+    border-bottom: 1px solid black;
 }
 form textarea{
-    background-color: black;
+    background-color: #755d32;
     color: white;
+    border: 1px solid black;
 }
 button{
     font-family: serif, cursive;
+    background-color: #8d1102;
     color: white;
-    background: #8eacbb;
-background: -moz-radial-gradient(center, ellipse cover, #8eacbb 0%, #34515e 99%);
-background: -webkit-radial-gradient(center, ellipse cover, #8eacbb 0%,#34515e 99%);
-background: radial-gradient(ellipse at center, #8eacbb 0%,#34515e 99%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8eacbb', endColorstr='#34515e',GradientType=1 );
     margin: 5px;
     font-size: 20px;
-    border-radius: 5px;
+    border: none;
 }
 button:active{
-    background: #f05545;
-background: -moz-radial-gradient(center, ellipse cover, #f05545 0%, #7f0000 99%);
-background: -webkit-radial-gradient(center, ellipse cover, #f05545 0%,#7f0000 99%);
-background: radial-gradient(ellipse at center, #f05545 0%,#7f0000 99%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05545', endColorstr='#7f0000',GradientType=1 );
-}
-div#map{
-    float: right;
-    margin-right: auto;
+    background-color: #cc2302;
+    
 }
