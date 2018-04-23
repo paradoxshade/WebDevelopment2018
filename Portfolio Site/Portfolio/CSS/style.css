@@ -97,6 +97,7 @@ footer{
 }
 p{
     color: white;
+    margin: 0% 5%;
 }
 
 #content{
@@ -115,39 +116,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a38a4c', end
     background-color: #cc2302;
 }
 
-/*products.html styles */
 #gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items:center;
-    width:100%;
-}
-figure{
-    width: 300px;
-    background-color: #f05545;
-    margin: 10px;
-}
-figure img{
-    align-content: center;
     display: block;
-    width:265px;
-    padding:5px;
-    margin: 10px auto;
-    
+    image-resolution: 100%;
 }
-figcaption{
-    text-align: center;
-    margin:auto;
-    margin-bottom: 10px;
-    font-family: 'Rubik Mono One', sans-serif;
-}
+
 
 /*contact.html*/
 form#form-contact{
     float: left;
-    margin-left: 15px;
+    margin: 0% 5%;
     color: white;
     clear: left;
 }
