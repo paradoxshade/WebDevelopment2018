@@ -22,28 +22,35 @@
             </nav>
             <div id="content">
                 <h2>Skills</h2>
-            </div>
+            
                 <div id="gallery">
-                    <img class="mySlides" src="Images/Mordor.png">
-                    <img class="mySlides" src="Images/ProfilePicFalcon.png">
+                    <div class="mySlides">
+                        <img id="image" src="Images/Mordor.png">
+                        <h3>3D Graphics</h3>
+                    </div>
+                    <div class="mySlides">
+                        <img id="image" src="Images/ProfilePicFalcon.png">
+                        <h3>Photoshop</h3>
+                    </div>
                 </div>
+                <script>
+                    var myIndex = 0;
+                    carousel();
+
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 10000);
+                    }
+                </script>
             </div>
-        <script>
-            var slideIndex = 0;
-            slide();
-                        
-            function slide() {
-                alert("loading");
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0 i <x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1}
-                x[slideIndex-1].style.display = "block";
-                setTimeout(slide, 2000);
-            }
-        </script>
+            </div>
+        
     </body>
 </html>

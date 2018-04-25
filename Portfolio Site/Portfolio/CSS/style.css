@@ -116,9 +116,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a38a4c', end
     background-color: #cc2302;
 }
 
-#gallery{
-    display: block;
-    image-resolution: 100%;
+
+#image {
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 0;
+}
+
+#content h3{
+    margin: 5%;
+    margin-top: 0;
+    margin-right: 75%;
+    background-color: #cc2302;
+    padding: 1%;
+    text-align: center;
+    color: white;
+    font-family: 'Gugi', cursive;
 }
 
 
