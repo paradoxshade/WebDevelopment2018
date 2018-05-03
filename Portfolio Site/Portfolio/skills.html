@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="CSS/style.css">
-     <link href="https://fonts.googleapis.com/css?family=Gugi|Permanent+Marker|Fjalla+One|Rubik+Mono+One" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Gugi|Permanent+Marker" rel="stylesheet"> 
     <head>
         <title>Ian Nielsen</title>
     </head>
@@ -25,19 +25,19 @@
             
                 <div id="gallery">
                     <div class="mySlides">
-                        <img id="image" src="Images/Mordor.png">
+                        <img id="image" src="Images/Mordor.png" alt="Ring">
                         <h3>3D Graphics</h3>
                     </div>
                     <div class="mySlides">
-                        <img id="image" src="Images/ProfilePicFalcon.png">
+                        <img id="image" src="Images/ProfilePicFalcon.png" alt="Photoshoped Image">
                         <h3>Photoshop</h3>
                     </div>
                     <div class="mySlides">
-                        <h3>This Website</h3>
+                        <h3><a href="https://github.com/paradoxshade/WebDevelopment2018/tree/master/Portfolio%20Site/Portfolio">This Website</a></h3>
                         <h3>Web Dev</h3>
                     </div>
                     <div class="mySlides">
-                        <img id="image" src="Images/DP.png">
+                        <img id="image" src="Images/DP.png" alt="Game Screenshot">
                         <h3>Programming</h3>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         myIndex++;
                         if (myIndex > x.length) {myIndex = 1}    
                         x[myIndex-1].style.display = "block";  
-                        setTimeout(carousel, 10000);
+                        setTimeout(carousel, 5000);
                     }
                 </script>
             </div>

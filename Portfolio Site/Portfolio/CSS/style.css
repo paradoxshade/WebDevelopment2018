@@ -1,22 +1,10 @@
-/*global style */
-/*
-    Primary:#607d8b;
-    P-Light:#8eacbb;
-    P-Dark:#34515e;
-    Secondary:#b71c1c;
-    S-Light:#f05545;
-    S-Dark:#7f0000;
 
-    font-family: 'Black Ops One', cursive;
-    font-family: 'Fjalla One', sans-serif;
-    font-family: 'Bowlby One', cursive;
-    font-family: 'Rubik Mono One', sans-serif;
-*/
 body{
     align-content: center;
     margin:auto;
     width: auto;
     background-color: #1f0802;
+    font-family:sans-serif;
 }
 #container{
     display: grid;
@@ -34,7 +22,7 @@ header{
     grid-column-end: 4;
     width:100%;
     height: 100%;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker', fantasy;
     background-image: url(../Images/theOneRing.png);
     background-size: cover;
     background-position: center;
@@ -52,6 +40,10 @@ header h2{
     text-align: center;
     font-size: 30px;
     margin-top: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 nav{
     grid-row-start: 2;
@@ -71,7 +63,7 @@ nav ul{
     padding:0;
     list-style:none;
     color: white;
-    font-family: 'Gugi', serif;
+    font-family: 'Gugi', cursive;
 }
 nav ul li{
     float: left;
@@ -163,7 +155,7 @@ form textarea{
     border: 1px solid black;
 }
 button{
-    font-family: serif, cursive;
+    font-family: 'Gugi', cursive;
     background-color: #8d1102;
     color: white;
     margin: 5px;
