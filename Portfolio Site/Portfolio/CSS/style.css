@@ -44,7 +44,6 @@ header h2{
     margin-top: 0;
 }
 a{
-    text-decoration: none;
     color: white;
 }
 nav{
@@ -121,7 +120,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a38a4c', end
 
 
 #image {
-    width: 90%;
+    max-width: 90%;
     margin: 5%;
     margin-bottom: 0;
     
@@ -130,6 +129,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a38a4c', end
 #content h3{
     margin: 5%;
     margin-top: 0;
+    margin-bottom: 1%;
     margin-right: 75%;
     background-color: #cc2302;
     padding: 1%;
